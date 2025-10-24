@@ -1,0 +1,16 @@
+[package]
+name = "jrip"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "jrip"
+path = "src/bin/main.rs"
+
+[lib]
+name = "jrip"
+path = "src/lib.rs"
+
+[dependencies]
+iced = "0.13.1"
+iced_aw = "0.12.2"

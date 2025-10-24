@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2025 by original authors @ fontello.com</metadata>
+<defs>
+<font id="jrip-icons" horiz-adv-x="1000" >
+<font-face font-family="jrip-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="folder" unicode="&#xe800;" d="M929 511v-393q0-51-37-88t-88-37h-679q-51 0-88 37t-37 88v536q0 51 37 88t88 37h179q51 0 88-37t37-88v-18h375q51 0 88-37t37-88z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="music" unicode="&#xe801;" d="M857 725v-625q0-28-19-50t-48-33-58-18-53-6-54 6-58 18-48 33-19 50 19 50 48 33 58 18 54 6q58 0 107-22v300l-429-132v-396q0-28-19-50t-48-33-58-18-53-6-54 6-58 18-48 33-19 50 19 50 48 34 58 17 54 6q58 0 107-21v539q0 17 10 32t28 20l464 142q7 3 16 3 22 0 38-16t15-38z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="ok" unicode="&#xe802;" d="M933 534q0-22-16-38l-404-404-76-76q-16-15-38-15t-38 15l-76 76-202 202q-15 16-15 38t15 38l76 76q16 16 38 16t38-16l164-165 366 367q16 16 38 16t38-16l76-76q16-15 16-38z" horiz-adv-x="1000" />
+
+<glyph glyph-name="left-open" unicode="&#xe803;" d="M654 682l-297-296 297-297q10-10 10-25t-10-25l-93-93q-11-10-25-10t-25 10l-414 415q-11 10-11 25t11 25l414 414q10 11 25 11t25-11l93-93q10-10 10-25t-10-25z" horiz-adv-x="714.3" />
+
+<glyph glyph-name="videocam" unicode="&#xe804;" d="M1000 654v-608q0-23-22-32-7-3-14-3-15 0-25 10l-225 225v-92q0-67-47-114t-113-47h-393q-67 0-114 47t-47 114v392q0 67 47 114t114 47h393q66 0 113-47t47-114v-92l225 225q10 10 25 10 7 0 14-2 22-10 22-33z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
