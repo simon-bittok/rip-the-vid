@@ -1,6 +1,9 @@
 use iced::{
-    Border, Color, Shadow, Theme,
-    widget::{button, container},
+    Border, Color, Shadow, Theme, Vector,
+    widget::{
+        button::{self, Status, Style},
+        container,
+    },
 };
 
 pub fn button_style(theme: &Theme, status: button::Status) -> button::Style {
@@ -80,7 +83,7 @@ pub fn popup_style(theme: &Theme) -> container::Style {
     }
 }
 
-pub fn file_row_style() -> impl Fn(&Theme, button::Status) -> button::Style {
+pub fn file_row_style() -> impl Fn(&Theme, button::Status) -> Style {
     |theme, status| {
         let palette = theme.extended_palette();
         button::Style {
@@ -101,7 +104,7 @@ pub fn file_row_style() -> impl Fn(&Theme, button::Status) -> button::Style {
     }
 }
 
-pub fn dir_button_style() -> impl Fn(&Theme, button::Status) -> button::Style {
+pub fn dir_button_style() -> impl Fn(&Theme, Status) -> Style {
     |theme, status| {
         let palette = theme.extended_palette();
         button::Style {
@@ -128,9 +131,14 @@ pub fn sidebar_style(theme: &Theme) -> container::Style {
     container::Style {
         background: Some(palette.background.weak.color.into()),
         border: Border {
-            color: palette.background.strong.color,
-            width: 1.0,
+            color: Color::TRANSPARENT,
+            width: 0.0,
             radius: 0.0.into(),
+        },
+        shadow: Shadow {
+            color: Color::from_rgba(0.0, 0.0, 0.0, 0.3),
+            offset: Vector::new(2.0, 0.0),
+            blur_radius: 8.0,
         },
         ..Default::default()
     }

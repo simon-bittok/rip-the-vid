@@ -6,6 +6,4 @@ pub enum Message {
     CD(PathBuf),
     JRIP(PathBuf),
     ClosePopup,
-    ShowSidebar(PathBuf),
-    CloseSidebar,
 }
