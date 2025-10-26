@@ -12,7 +12,7 @@ pub fn button_style(theme: &Theme, status: button::Status) -> button::Style {
         background: Some(match status {
             button::Status::Hovered => palette.primary.strong.color.into(),
             button::Status::Pressed => palette.primary.base.color.into(),
-            _ => palette.primary.weak.color.into(),
+            _ => Color::from_rgb8(137, 180, 250).into(),
         }),
         text_color: palette.primary.strong.text,
         border: Border::default().rounded(6),
@@ -26,7 +26,7 @@ pub fn exit_button_style(theme: &Theme, status: button::Status) -> button::Style
         background: Some(match status {
             button::Status::Hovered => palette.danger.strong.color.into(),
             button::Status::Pressed => palette.danger.base.color.into(),
-            _ => palette.danger.weak.color.into(),
+            _ => Color::from_rgb8(243, 139, 168).into(),
         }),
         text_color: palette.danger.strong.text,
         border: Border::default().rounded(6),
@@ -56,15 +56,15 @@ pub fn close_button_style(theme: &Theme, status: button::Status) -> button::Styl
             _ => palette.success.base.color.into(),
         }),
         text_color: palette.success.strong.text,
-        border: Border::default().rounded(4),
+        border: Border::default().rounded(6),
         shadow: Shadow::default(),
     }
 }
 
 pub fn header_style(theme: &Theme) -> container::Style {
-    let palette = theme.extended_palette();
+    let _palette = theme.extended_palette();
     container::Style {
-        background: Some(palette.background.strong.color.into()),
+        background: Some(Color::from_rgba8(17, 17, 27, 0.0).into()),
         border: Border::default(),
         ..Default::default()
     }
@@ -127,9 +127,9 @@ pub fn dir_button_style() -> impl Fn(&Theme, Status) -> Style {
 }
 
 pub fn sidebar_style(theme: &Theme) -> container::Style {
-    let palette = theme.extended_palette();
+    let _palette = theme.extended_palette();
     container::Style {
-        background: Some(palette.background.weak.color.into()),
+        background: Some(Color::from_rgba8(49, 50, 68, 0.0).into()),
         border: Border {
             color: Color::TRANSPARENT,
             width: 0.0,
